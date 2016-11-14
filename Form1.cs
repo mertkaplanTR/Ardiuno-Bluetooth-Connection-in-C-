@@ -84,5 +84,129 @@ namespace bt
                 label2.Text = "Connection Closed";
             }
         }
+
+        private void BtnSendHour_Click(object sender, EventArgs e)
+        {
+            if(TxtHour.Text=="")
+            {
+                PicHour.Image = Properties.Resources._default;
+            }
+            else
+            if (TxtHour.Text=="0")
+            {
+                PicHour.Image = Properties.Resources._0;
+            }
+            else
+            if (TxtHour.Text == "1")
+            {
+                PicHour.Image = Properties.Resources._1;
+            }
+            else
+            if (TxtHour.Text == "2")
+            {
+                PicHour.Image = Properties.Resources._2;
+            }
+            else
+            if (TxtHour.Text == "3")
+            {
+                PicHour.Image = Properties.Resources._3;
+            }
+            else
+            if (TxtHour.Text == "4")
+            {
+                PicHour.Image = Properties.Resources._4;
+            }
+            else
+            if (TxtHour.Text == "5")
+            {
+                PicHour.Image = Properties.Resources._5;
+            }
+            else
+            if (TxtHour.Text == "6")
+            {
+                PicHour.Image = Properties.Resources._6;
+            }
+            else
+            if (TxtHour.Text == "7")
+            {
+                PicHour.Image = Properties.Resources._7;
+            }
+            else
+            if (TxtHour.Text == "8")
+            {
+                PicHour.Image = Properties.Resources._8;
+            }
+            else
+            if (TxtHour.Text == "9")
+            {
+                PicHour.Image = Properties.Resources._9;
+            }
+            else
+            {
+                PicHour.Image = Properties.Resources._default;
+            }
+        }
+
+        private void BtnSendMin_Click(object sender, EventArgs e)
+        {
+            if (TxtMin.Text == "")
+            {
+                PicMin.Image = Properties.Resources._default;
+            }
+            else
+           if (TxtMin.Text == "0")
+            {
+                PicMin.Image = Properties.Resources._0;
+            }
+            else
+           if (TxtMin.Text == "1")
+            {
+                PicMin.Image = Properties.Resources._1;
+            }
+            else
+           if (TxtMin.Text == "2")
+            {
+                PicMin.Image = Properties.Resources._2;
+            }
+            else
+           if (TxtMin.Text == "3")
+            {
+                PicMin.Image = Properties.Resources._3;
+            }
+            else
+           if (TxtMin.Text == "4")
+            {
+                PicMin.Image = Properties.Resources._4;
+            }
+            else
+           if (TxtMin.Text == "5")
+            {
+                PicMin.Image = Properties.Resources._5;
+            }
+            else
+           if (TxtMin.Text == "6")
+            {
+                PicMin.Image = Properties.Resources._6;
+            }
+            else
+           if (TxtMin.Text == "7")
+            {
+                PicMin.Image = Properties.Resources._7;
+            }
+            else
+           if (TxtMin.Text == "8")
+            {
+                PicMin.Image = Properties.Resources._8;
+            }
+            else
+           if (TxtMin.Text == "9")
+            {
+                PicMin.Image = Properties.Resources._9;
+            }
+            else
+            {
+                PicMin.Image = Properties.Resources._default;
+            }
+        }
     }
 }
