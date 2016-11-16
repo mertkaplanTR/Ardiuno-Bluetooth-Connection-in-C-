@@ -99,7 +99,12 @@ namespace bt
             else
             if (TxtHour.Text == "1")
             {
-                PicHour.Image = Properties.Resources._1;
+                if (serialPort1.IsOpen == true)
+                {
+                    PicHour.Image = Properties.Resources._1;
+                   
+                }
+
             }
             else
             if (TxtHour.Text == "2")
@@ -206,6 +211,35 @@ namespace bt
             else
             {
                 PicMin.Image = Properties.Resources._default;
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (serialPort1.IsOpen == true)
+                serialPort1.Write("39");
+            else
+            {
+                serialPort1.Open();
+                serialPort1.Write("39");
+            }
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if(serialPort1.IsOpen==true)
+            {
+                serialPort1.Write("0");
+               
+            }
+            else
+            {
+                if(serialPort1.IsOpen==false)
+                {
+                    serialPort1.Open();
+                    serialPort1.Write("0");
+                }
             }
         }
     }
